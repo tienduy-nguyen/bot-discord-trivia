@@ -6,8 +6,6 @@ git_source(:github) {|repo_name| "https://github.com/#{repo_name}" }
 
 ruby '~> 2.7.0'
 gem "dotenv"
-gem 'sinatra'
-gem 'rack'
 gem 'json'
 gem 'shotgun'
 gem 'httparty'
