@@ -1,4 +1,4 @@
-require 'thp/utils/embed.rb'
+require 'thp/utils/embeds.rb'
 
 module Ba
   module Events

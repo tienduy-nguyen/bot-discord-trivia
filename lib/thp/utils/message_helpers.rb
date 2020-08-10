@@ -1,4 +1,4 @@
-require 'thp/model/emoji.rb'
+require 'thp/models/emoji'
 
 module THP
   module Utils

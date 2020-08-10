@@ -12,8 +12,7 @@ module THP
 
         def self.embed_footer(text)
           Discordrb::Webhooks::EmbedFooter.new(
-            text: text,
-            icon_url: THP_BOT.users[145_696_462_959_935_488].avatar_url
+            text: text
           )
         end
 
@@ -29,7 +28,7 @@ module THP
         end
       end
 
-      def self.send_embed(event:, title:, fields:, description: nil)
+      def self.send_embed(event:, title:, description: nil)
         event.channel.send_embed do |embed|
           embed.title = title
           embed.colour = Defaults.embed_color
@@ -37,7 +36,7 @@ module THP
           embed.description = description
           embed.footer = Defaults.embed_footer
           embed.timestamp = Time.now
-          fields.each { |field| embed.add_field(name: field[:name], value: field[:value], inline: field[:inline]) }
+          # fields.each { |field| embed.add_field(name: field[:name], value: field[:value], inline: field[:inline]) }
           # embed.url = Defaults.embed_url
           # embed.thumbnail = Defaults.embed_thumbnail
           # embed.author = Defaults.embed_author event.author

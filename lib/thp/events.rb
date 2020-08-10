@@ -1,5 +1,5 @@
-require 'thp/events/message.rb'
-require 'thp/events/message.rb'
+require 'thp/events/mention'
+require 'thp/events/message'
 
 module THP
   module Events

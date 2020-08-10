@@ -6,21 +6,17 @@ module THP
       module Attributes
         ALL = [
           PING = {
-            description: 'Politely ask Ba if she is awake.',
+            description: 'Politely ask bot if she is awake.',
             help_available: true,
             max_args: 0,
             rescue: 'Oh no, something terrible has happened. An Error occured executing this command :c',
-            usage: '?ba ping'
+            usage: "#{THP_BOT.prefix}pinghkhh"
           }.freeze
         ].freeze
       end
 
       def self.ping(event)
-        delay = "#{((Time.now - event.timestamp) * 1000).to_i}ms"
-
-        fields = [{ name: 'Response Time', value: delay }]
-
-        Ba::Utils::Embeds.send_embed(event: event, title: 'Ba Ping!', fields: fields)
+        THP::Utils::Embeds.send_embed(event: event, title: 'THP Ping!')
       end
     end
   end

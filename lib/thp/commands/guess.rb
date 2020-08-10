@@ -1,15 +1,4 @@
  
-require 'httparty'
-require 'dotenv'
-require 'discordrb'
-require 'json'
-
-Dotenv.load('.env')
-
-
-THP_BOT = Discordrb::Commands::CommandBot.new(token: ENV['TOKEN'], prefix: '!');
-INVITE_URL = "#{THP_BOT.invite_url}&permissions=37080128"
-
 
 THP_BOT.message(start_with: "#{THP_BOT.prefix}guess") do |event|
   # Pick a number between 1 and 10
