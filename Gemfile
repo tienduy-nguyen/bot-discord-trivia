@@ -9,3 +9,4 @@ gem "dotenv"
 gem 'json'
 gem 'shotgun'
 gem 'httparty'
+gem 'rake'

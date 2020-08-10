@@ -1,4 +1,4 @@
-# Bot Discord Trivia
+# Quizz Discord Bot
 
 This is  a simple quiz bot like trivia built with [discordrb](https://github.com/discordrb/discordrb) - Ruby language.
 
